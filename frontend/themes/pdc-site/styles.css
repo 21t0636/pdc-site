@@ -1,0 +1,23 @@
+@import url('./main-layout.css');
+@import url('./views/chat-view.css');
+@import url('./views/teilnehmen-view.css');
+@import url('./views/order-of-merit-view.css');
+@import url('@fontsource/rubik/index.css');    html {
+      --lumo-border-radius-s: 1px;
+      --lumo-border-radius-m: 2px;
+      --lumo-border-radius-l: 4px;
+      --lumo-size-xl: 3rem;
+      --lumo-size-l: 2.5rem;
+      --lumo-size-m: 2rem;
+      --lumo-size-s: 1.75rem;
+      --lumo-size-xs: 1.5rem;
+      --lumo-primary-text-color: hsl(214, 20%, 36%);
+      --lumo-space-xl: 1.875rem;
+      --lumo-space-l: 1.25rem;
+      --lumo-space-m: 0.625rem;
+      --lumo-space-s: 0.3125rem;
+      --lumo-space-xs: 0.1875rem;
+      --lumo-body-text-color: hsla(214, 0%, 0%, 0.94);
+--lumo-font-family: Rubik;
+
+    }
