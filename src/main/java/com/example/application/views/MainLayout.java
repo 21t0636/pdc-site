@@ -33,6 +33,7 @@ import com.vaadin.flow.theme.lumo.LumoUtility.TextColor;
 import com.vaadin.flow.theme.lumo.LumoUtility.Whitespace;
 import com.vaadin.flow.theme.lumo.LumoUtility.Width;
 import org.vaadin.lineawesome.LineAwesomeIcon;
+import com.vaadin.flow.component.html.Image;
 
 /**
  * The main view is a top-level placeholder for other views.
@@ -94,9 +95,11 @@ public class MainLayout extends AppLayout {
         list.addClassNames(Display.FLEX, Gap.SMALL, ListStyleType.NONE, Margin.NONE, Padding.NONE);
         nav.add(list);
 
+        //Image image = new Image("https://upload.wikimedia.org/wikipedia/de/thumb/2/29/Professional_Darts_Corporation_logo.svg/1200px-Professional_Darts_Corporation_logo.svg.png", "My Alt Image");
+        //nav.add(image);
+
         for (MenuItemInfo menuItem : createMenuItems()) {
             list.add(menuItem);
-
         }
 
         header.add(layout, nav);
@@ -105,17 +108,17 @@ public class MainLayout extends AppLayout {
 
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{ //
-                new MenuItemInfo("Home", null, HomeView.class), //
+                new MenuItemInfo("Home", LineAwesomeIcon.HOME_SOLID.create(), HomeView.class), //
 
-                new MenuItemInfo("Regeln", null, RegelnView.class), //
+                new MenuItemInfo("Regeln", LineAwesomeIcon.INFO_SOLID.create(), RegelnView.class), //
 
-                new MenuItemInfo("Chat", null, ChatView.class), //
+                new MenuItemInfo("Chat", LineAwesomeIcon.SMS_SOLID.create(), ChatView.class), //
 
-                new MenuItemInfo("Teilnehmen", null, TeilnehmenView.class), //
+                new MenuItemInfo("Teilnehmen", LineAwesomeIcon.ENVELOPE_OPEN_SOLID.create(), TeilnehmenView.class), //
 
-                new MenuItemInfo("Order Of Merit", null, OrderOfMeritView.class), //
+                new MenuItemInfo("Order Of Merit", LineAwesomeIcon.TROPHY_SOLID.create(), OrderOfMeritView.class), //
 
-                new MenuItemInfo("Newsletter", LineAwesomeIcon.GLOBE_SOLID.create(), NewsletterView.class), //
+                new MenuItemInfo("Newsletter", LineAwesomeIcon.NEWSPAPER_SOLID.create(), NewsletterView.class), //
 
         };
     }

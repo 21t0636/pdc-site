@@ -18,42 +18,49 @@ import com.vaadin.flow.theme.lumo.LumoUtility.Overflow;
 import com.vaadin.flow.theme.lumo.LumoUtility.Padding;
 import com.vaadin.flow.theme.lumo.LumoUtility.TextColor;
 import com.vaadin.flow.theme.lumo.LumoUtility.Width;
+import com.vaadin.flow.component.html.UnorderedList;
+
+
 
 public class OrderOfMeritViewCard extends ListItem {
 
-    public OrderOfMeritViewCard(String text, String url) {
+    public OrderOfMeritViewCard(int ranking, String playerName, String earnings, String nickname, String darts, String country, String url) {
         addClassNames(Background.CONTRAST_5, Display.FLEX, FlexDirection.COLUMN, AlignItems.START, Padding.MEDIUM,
                 BorderRadius.LARGE);
 
         Div div = new Div();
         div.addClassNames(Background.CONTRAST, Display.FLEX, AlignItems.CENTER, JustifyContent.CENTER,
                 Margin.Bottom.MEDIUM, Overflow.HIDDEN, BorderRadius.MEDIUM, Width.FULL);
-        div.setHeight("160px");
 
         Image image = new Image();
         image.setWidth("100%");
         image.setSrc(url);
-        image.setAlt(text);
+        image.setAlt("");
 
         div.add(image);
 
         Span header = new Span();
         header.addClassNames(FontSize.XLARGE, FontWeight.SEMIBOLD);
-        header.setText("Title");
+        header.setText(playerName);
 
         Span subtitle = new Span();
         subtitle.addClassNames(FontSize.SMALL, TextColor.SECONDARY);
-        subtitle.setText("Card subtitle");
+        subtitle.setText(earnings);
 
-        Paragraph description = new Paragraph(
-                "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.");
-        description.addClassName(Margin.Vertical.MEDIUM);
+        UnorderedList list = new UnorderedList();
+        list.addClassNames(Margin.Top.SMALL);
+
+        ListItem item1 = new ListItem("Spitzname: " + nickname);
+        ListItem item2 = new ListItem("Darts: " + darts);
+        ListItem item3 = new ListItem("Land: " + country);
+
+        list.add(item1, item2, item3);
 
         Span badge = new Span();
         badge.getElement().setAttribute("theme", "badge");
-        badge.setText("Label");
+        badge.setText("No. " + ranking);
 
-        add(div, header, subtitle, description, badge);
+        add(div, header, subtitle, list, badge);
 
     }
 }
