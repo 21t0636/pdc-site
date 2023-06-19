@@ -1,0 +1,72 @@
+.regeln-view {
+    border: #0165b3 solid 2px;
+    box-shadow: 10px 10px #0165b3;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1024px;
+    padding: 0 var(--lumo-space-l);
+}
+
+.regeln-view H1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0165b3;
+    text-align: center;
+}
+
+.regeln-view H2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+    text-align: center;
+}
+
+.regeln-view H3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.ruleText {
+    font-size: 15pt;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0165b3;
+    text-align: center;
+}
+
+.mainRules {
+    color: red;
+    border: red solid 2px;
+    box-shadow: 10px 10px red;
+    display: block;
+    margin: 0 auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    max-width: 1024px;
+    padding: 0 var(--lumo-space-l);
+}
+
+.dartboard {
+    color: red;
+    border: red solid 2px;
+    box-shadow: 10px 10px red;
+    display: block;
+    margin: 0 auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    max-width: 1024px;
+    padding: 0 var(--lumo-space-l);
+}
+
+.dartBoardImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    margin-bottom: 20px;
+}

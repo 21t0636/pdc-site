@@ -1,16 +1,20 @@
+
 header nav a:any-link {
   text-decoration: none;
   padding: 0 var(--lumo-space-s);
   border-radius: var(--lumo-border-radius-m);
   outline: 0;
+  color: #0165b3;
 }
 
 header nav a:hover {
   color: var(--lumo-header-text-color);
+  color: red;
 }
 
 header nav a:active {
   background-color: var(--lumo-contrast-5pct);
+  background-color: white;
 }
 
 header nav a:focus-visible {
@@ -19,8 +23,10 @@ header nav a:focus-visible {
 
 header nav a[highlight] span {
   color: var(--lumo-primary-text-color);
+  color: white;
 }
 
 header nav a[highlight] {
   background-color: var(--lumo-primary-color-10pct);
+  background-color: #0165b3;
 }

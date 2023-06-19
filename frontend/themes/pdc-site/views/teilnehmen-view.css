@@ -1,14 +1,36 @@
 .teilnehmen-view {
+  border: #0165b3 solid 2px;
+  box-shadow: 10px 10px #0165b3;
   display: block;
   margin: 0 auto;
-  max-width: 1024px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 720px;
   padding: 0 var(--lumo-space-l);
 }
+
 .teilnehmen-view .button-layout {
   margin-bottom: var(--lumo-space-l);
   margin-top: var(--lumo-space-m);
 }
+
+.senden-button {
+  background-color: #0165b3;
+}
+
 .teilnehmen-view h3 {
+  text-align: center;
+  color: red;
   margin-bottom: var(--lumo-space-s);
   margin-top: var(--lumo-space-l);
+}
+
+.teilnehmen-view h4 {
+  color: #0165b3;
+  text-align: center;
+}
+
+.infoText {
+  font-size: 10pt;
+  color: grey;
 }

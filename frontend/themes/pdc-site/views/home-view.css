@@ -1,0 +1,47 @@
+.home-view {
+    background-color: white;
+    border: #0165b3 solid 2px;
+    box-shadow: 10px 10px #0165b3;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 1024px;
+    padding: 0 var(--lumo-space-l);
+}
+
+.home-view H1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0165b3;
+    text-align: center;
+}
+
+.home-view H2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: red;
+    text-align: center;
+} 
+
+@font-face {
+    font-family: Autograph;
+    src: url("Autography-DOLnW.otf") format("opentype");
+}
+
+.home-view H3 {
+    font-family: Autograph;
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+} 
+
+.pdcLogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 20px;
+}

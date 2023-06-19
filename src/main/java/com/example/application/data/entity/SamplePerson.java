@@ -1,22 +1,28 @@
 package com.example.application.data.entity;
 
 import jakarta.persistence.Entity;
-import jakarta.validation.constraints.Email;
 import java.time.LocalDate;
 
 @Entity
 public class SamplePerson extends AbstractEntity {
 
+    private String tournaments;
     private String firstName;
     private String lastName;
-    @Email
-    private String email;
-    private String phone;
     private LocalDate dateOfBirth;
-    private String occupation;
-    private String role;
-    private boolean important;
+    private String email;
+    private boolean age;
+    private boolean rules;
+    private boolean allowPhotos;
 
+    private String playerHand;
+
+    public String getTournaments() {
+        return tournaments;
+    }
+    public void setTournaments(String tournaments) {
+        this.tournaments = tournaments;
+    }
     public String getFirstName() {
         return firstName;
     }
@@ -35,35 +41,34 @@ public class SamplePerson extends AbstractEntity {
     public void setEmail(String email) {
         this.email = email;
     }
-    public String getPhone() {
-        return phone;
-    }
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
     public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
     public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-    public String getOccupation() {
-        return occupation;
+    public boolean getAge() {
+        return age;
     }
-    public void setOccupation(String occupation) {
-        this.occupation = occupation;
+    public void setAge(boolean age) {
+        this.age = age;
     }
-    public String getRole() {
-        return role;
+    public String getPlayerHand() {
+        return playerHand;
     }
-    public void setRole(String role) {
-        this.role = role;
+    public void setPlayerHand(String playerHand) {
+        this.playerHand = playerHand;
     }
-    public boolean isImportant() {
-        return important;
+    public boolean getRules() {
+        return rules;
     }
-    public void setImportant(boolean important) {
-        this.important = important;
+    public void setRules(boolean rules) {
+        this.rules = rules;
     }
-
+    public boolean getAllowPhotos() {
+        return allowPhotos;
+    }
+    public void setAllowPhotos(boolean allowPhotos) {
+        this.allowPhotos = allowPhotos;
+    }
 }

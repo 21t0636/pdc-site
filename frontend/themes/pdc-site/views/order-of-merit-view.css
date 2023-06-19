@@ -1,3 +1,30 @@
+.order-of-merit-view {
+  border: #0165b3 solid 2px;
+  box-shadow: 10px 10px #0165b3;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 1024px;
+  padding: 0 var(--lumo-space-l);
+}
+
+.order-of-merit-view H3 {
+  color: #0165b3;
+}
+
+.order-of-merit-view .OOMDescription {
+  border: #0165b3 solid 2px;
+  box-shadow: 10px 10px #0165b3;
+  color: red;
+  display: block;
+  margin: 0 auto;
+  margin: 10px;
+  max-width: 1024px;
+  padding: 0 var(--lumo-space-l);
+  padding: 10px;
+}
+
 .order-of-merit-view ol {
   grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
 }

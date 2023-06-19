@@ -1,37 +1,37 @@
 package com.example.application.views.chat;
 
-import com.example.application.views.MainLayout;
-import com.vaadin.collaborationengine.CollaborationAvatarGroup;
 import com.vaadin.collaborationengine.CollaborationMessageInput;
-import com.vaadin.collaborationengine.CollaborationMessageList;
-import com.vaadin.collaborationengine.MessageManager;
-import com.vaadin.collaborationengine.UserInfo;
-import com.vaadin.flow.component.AttachEvent;
-import com.vaadin.flow.component.html.Aside;
-import com.vaadin.flow.component.html.H3;
-import com.vaadin.flow.component.html.Header;
-import com.vaadin.flow.component.html.Span;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
+import com.vaadin.collaborationengine.CollaborationAvatarGroup;
+import com.vaadin.collaborationengine.CollaborationMessageList;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
-import com.vaadin.flow.component.page.Page;
-import com.vaadin.flow.component.tabs.Tab;
-import com.vaadin.flow.component.tabs.Tabs;
-import com.vaadin.flow.component.tabs.Tabs.Orientation;
-import com.vaadin.flow.router.PageTitle;
-import com.vaadin.flow.router.Route;
+import com.vaadin.flow.theme.lumo.LumoUtility.JustifyContent;
+import com.vaadin.flow.theme.lumo.LumoUtility.FlexDirection;
 import com.vaadin.flow.theme.lumo.LumoUtility.AlignItems;
 import com.vaadin.flow.theme.lumo.LumoUtility.Background;
 import com.vaadin.flow.theme.lumo.LumoUtility.BoxSizing;
-import com.vaadin.flow.theme.lumo.LumoUtility.Display;
-import com.vaadin.flow.theme.lumo.LumoUtility.Flex;
-import com.vaadin.flow.theme.lumo.LumoUtility.FlexDirection;
-import com.vaadin.flow.theme.lumo.LumoUtility.JustifyContent;
-import com.vaadin.flow.theme.lumo.LumoUtility.Margin;
+import com.vaadin.flow.component.tabs.Tabs.Orientation;
 import com.vaadin.flow.theme.lumo.LumoUtility.Overflow;
 import com.vaadin.flow.theme.lumo.LumoUtility.Padding;
+import com.vaadin.flow.theme.lumo.LumoUtility.Display;
+import com.vaadin.collaborationengine.MessageManager;
+import com.vaadin.flow.theme.lumo.LumoUtility.Margin;
 import com.vaadin.flow.theme.lumo.LumoUtility.Width;
+import com.vaadin.flow.theme.lumo.LumoUtility.Flex;
+import com.example.application.views.MainLayout;
+import com.vaadin.collaborationengine.UserInfo;
+import com.vaadin.flow.component.html.Header;
+import com.vaadin.flow.component.AttachEvent;
+import com.vaadin.flow.component.html.Aside;
+import com.vaadin.flow.component.html.Span; 
+import com.vaadin.flow.component.page.Page;
+import com.vaadin.flow.component.tabs.Tabs;
+import com.vaadin.flow.component.tabs.Tab;
+import com.vaadin.flow.component.html.H3;
+import com.vaadin.flow.router.PageTitle;
+import com.vaadin.flow.router.Route;
 import java.util.UUID;
-
+ 
 @PageTitle("Chat")
 @Route(value = "Chat", layout = MainLayout.class)
 public class ChatView extends HorizontalLayout {
@@ -83,8 +83,8 @@ public class ChatView extends HorizontalLayout {
         }
     }
 
-    private ChatInfo[] chats = new ChatInfo[]{new ChatInfo("general", 0), new ChatInfo("support", 0),
-            new ChatInfo("casual", 0)};
+    private ChatInfo[] chats = new ChatInfo[]{new ChatInfo("Weltmeisterschaft", 0), new ChatInfo("Turniere", 0),
+            new ChatInfo("Casual", 0)};
     private ChatInfo currentChat = chats[0];
     private Tabs tabs;
 
@@ -98,7 +98,7 @@ public class ChatView extends HorizontalLayout {
         // identifier, and the user's real name. You can also provide the users
         // avatar by passing an url to the image as a third parameter, or by
         // configuring an `ImageProvider` to `avatarGroup`.
-        UserInfo userInfo = new UserInfo(UUID.randomUUID().toString(), "Steve Lange");
+        UserInfo userInfo = new UserInfo(UUID.randomUUID().toString(), "Example-User");
 
         tabs = new Tabs();
         for (ChatInfo chat : chats) {
@@ -134,14 +134,16 @@ public class ChatView extends HorizontalLayout {
 
         VerticalLayout chatContainer = new VerticalLayout();
         chatContainer.addClassNames(Flex.AUTO, Overflow.HIDDEN);
+        chatContainer.addClassName("chatContainer");
 
         Aside side = new Aside();
         side.addClassNames(Display.FLEX, FlexDirection.COLUMN, Flex.GROW_NONE, Flex.SHRINK_NONE, Background.CONTRAST_5);
+        side.addClassName("sidePanel");
         side.setWidth("18rem");
         Header header = new Header();
-        header.addClassNames(Display.FLEX, FlexDirection.ROW, Width.FULL, AlignItems.CENTER, Padding.MEDIUM,
-                BoxSizing.BORDER);
-        H3 channels = new H3("Channels");
+        header.addClassNames(Display.FLEX, FlexDirection.ROW, Width.FULL, AlignItems.CENTER, Padding.MEDIUM, BoxSizing.BORDER);
+        header.addClassName("headerSidepanel");
+        H3 channels = new H3("Chats");
         channels.addClassNames(Flex.GROW, Margin.NONE);
         CollaborationAvatarGroup avatarGroup = new CollaborationAvatarGroup(userInfo, "chat");
         avatarGroup.setMaxItemsVisible(4);
@@ -186,9 +188,8 @@ public class ChatView extends HorizontalLayout {
             setMobile(e.getWidth() < 740);
         });
     }
-
+ 
     private void setMobile(boolean mobile) {
         tabs.setOrientation(mobile ? Orientation.HORIZONTAL : Orientation.VERTICAL);
     }
-
 }

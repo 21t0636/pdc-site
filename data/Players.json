@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "name": "Michael Smith",
+        "earnings": "£1,273,250",
+        "nickname": "Bullyboy",
+        "darts": "22g Unicorn",
+        "nationality": "England",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2023-01/2023WCF_MSmithTrophy7.jpg?h=cce03fa1&itok=f0IjNOwH"
+    },
+    {
+        "id": 2,
+        "name": "Michael van Gerwen",
+        "earnings": "£1,156,000",
+        "nickname": "Mighty Mike",
+        "darts": "21.5g Winmau",
+        "nationality": "Netherlands",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDMYCHPLAY-QF-VANGERWEN4.jpg?itok=x2QRR5Hd"
+    },
+    {
+        "id": 3,
+        "name": "Peter Wright",
+        "earnings": "£1,153,250",
+        "nickname": "Snakebite",
+        "darts": "22g Red Dragon",
+        "nationality": "Schottland",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDMTCHPLAY-FNL-WRIGHT32.jpg?h=8494ad1e&itok=mlTHppZl"
+    },
+    {
+        "id": 4,
+        "name": "Gerwyn Price",
+        "earnings": "£773,250",
+        "nickname": "The Iceman",
+        "darts": "22g Red Dragon",
+        "nationality": "Wales",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDCHAMPS-FINAL-PRICE-26.jpg?h=923f9667&itok=8KkF21N4"
+    },
+    {
+        "id": 5,
+        "name": "Rob Cross",
+        "earnings": "£543,000", 
+        "nickname": "Voltage",
+        "darts": "21g Target",
+        "nationality": "England",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDMTCHPLAY-RD1-CROSS2.jpg?h=1a99f9b0&itok=hXw6j5r5"
+    },
+    {
+        "id": 6,
+        "name": "Luke Humphries", 
+        "earnings": "£539,500", 
+        "nickname": "Cool Hand Luke",
+        "darts": "22g Red Dragon",
+        "nationality": "England",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDMTCHPLAY-RD1-HUMPHRIES9.jpg?h=6591a0e0&itok=2cMB53oW"
+    },
+    {
+        "id": 7,
+        "name": "Jonny Clayton",
+        "earnings": "£525,250",
+        "nickname": "The Ferret",
+        "darts": "23g Red Dragon",
+        "nationality": "Wales",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/PREMLGE-FNL-CLAYTONWINS10%5B1%5D.jpg?h=17e964c2&itok=TymzOh0e"
+    },
+    {
+        "id": 8,
+        "name": "Danny Noppert",
+        "earnings": "£494,750",
+        "nickname": "Noppie",
+        "darts": "23g Bull's",
+        "nationality": "Netherlands",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/10%20-%20Danny%20Noppert.jpg?h=9dd8a09e&itok=YCv27MBk"
+    },
+    {
+        "id": 9,
+        "name": "Nathan Aspinall",
+        "earnings": "£487,000",
+        "nickname": "The Asp",
+        "darts": "21g Target",
+        "nationality": "England",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDMYCHPLAY-QF-ASPINALL7.jpg?h=129013b9&itok=c9_Sn8vR"
+    },
+    {
+        "id": 10,
+        "name": "Dimitri Van den Bergh",
+        "earnings": "£457,250",
+        "nickname": "Dream Maker",
+        "darts": "23g Unicorn",
+        "nationality": "Belgium",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDMTCHPLAY-FNL-VANDENBERGHWINS15.jpg?h=0212014c&itok=4-BhzcEO"
+    },
+    {
+        "id": 11,
+        "name": "Dirk van Duijvenbode",
+        "earnings": "£424,000",
+        "nickname": "Titan",
+        "darts": "25g Winmau",
+        "nationality": "Netherlands",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-03/WLDCHAMPS-RD3-VANDUIJVENBODE4.jpg?h=8c76e2be&itok=dL46ttDw"
+    },
+    {
+        "id": 12,
+        "name": "Dave Chisnall",
+        "earnings": "£382,250",
+        "nickname": "Chizzy",
+        "darts": "24g Harrows",
+        "nationality": "England",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDMTCHPLAY-RD2-CHISNALL3.jpg?h=4afdd085&itok=5Evkwl8B"
+    },
+    {
+        "id": 13,
+        "name": "Joe Cullen",
+        "earnings": "£377,250",
+        "nickname": "Rockstar",
+        "darts": "23g Target",
+        "nationality": "England",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDMTCHPLAY-RD1-CULLEN34.jpg?h=78714341&itok=MDn4Jd4e"
+    },
+    {
+        "id": 14,
+        "name": "Ryan Searle",
+        "earnings": "£369,000",
+        "nickname": "Heavy Metal",
+        "darts": "23g Winmau",
+        "nationality": "England",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDCHAMPS-RD1-SEARLE1.jpg?h=1a99f9b0&itok=NJGch3jx"
+    },
+    {
+        "id": 15,
+        "name": "Damon Heta",
+        "earnings": "£354,500",
+        "nickname": "The Heat",
+        "darts": "23g Red Dragon",
+        "nationality": "Australia",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/GRANDSLAM-RD2-HETA20.jpg?h=f2bcf3ae&itok=Prc7Vts6"
+    },
+    {
+        "id": 16,
+        "name": "James Wade",
+        "earnings": "£347,000",
+        "nickname": "The Machine",
+        "darts": "24g Unicorn",
+        "nationality": "England",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/UKOPEN-FNL-WADE17_2000.jpg?h=7ca51d20&itok=sQf2pMks"
+    },
+    {
+        "id": 17,
+        "name": "Jose De Sousa",
+        "earnings": "£344,500",
+        "nickname": "The Special One",
+        "darts": "25g Target",
+        "nationality": "Portugal",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/GRANSDSLAM-FNL-DESOUSA20.jpg?h=d38cb668&itok=g9-OnmhD"
+    },
+    {
+        "id": 18,
+        "name": "Ross Smith",
+        "earnings": "£334,500",
+        "nickname": "Smudger",
+        "darts": "23g Red Dragon",
+        "nationality": "England",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2022-10/DSC_8158.jpg?h=cb83bf6e&itok=j9mCCP8t"
+    },
+{
+        "id": 19,
+        "name": "Krzysztof Ratajski",
+        "earnings": "£301,250",
+        "nickname": "The Polish Eagle",
+        "darts": "20g Bulls",
+        "nationality": "Polen",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDCHAMPS-QF-RATAJSKI7.jpg?h=08331636&itok=ePATi3Tl"
+    },
+{
+        "id": 20,
+        "name": "Gabriel Clemens",
+        "earnings": "£334,500",
+        "nickname": "German Giant",
+        "darts": "23g Target",
+        "nationality": "Deutschland",
+        "image": "https://www.pdc.tv/sites/default/files/styles/player_desktop/public/players/profile/2021-09/WLDCHAMPS-RD3-CLEMENS17.jpg?h=27b00861&itok=oIsor2kO"
+    }
+]

@@ -1,6 +1,9 @@
 @import url('./main-layout.css');
+@import url('./views/home-view.css');
+@import url('./views/regeln-view.css');
 @import url('./views/chat-view.css');
 @import url('./views/teilnehmen-view.css');
+@import url('./views/newsletter-view.css');
 @import url('./views/order-of-merit-view.css');
 @import url('@fontsource/rubik/index.css');    html {
       --lumo-border-radius-s: 1px;

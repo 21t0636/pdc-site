@@ -1,3 +1,11 @@
+.chat-view {
+  border: #0165b3 solid 2px;
+    box-shadow: 10px 10px #0165b3;
+    margin: 50px auto;
+    max-width: 85%;
+    max-height: 85%;
+}
+
 @media screen and (max-width: 740px) {
  .chat-view {
     flex-direction: column-reverse;
@@ -17,3 +25,17 @@
     justify-content: flex-start;
   }
 }
+
+.chatContainer {
+
+}
+
+.sidePanel {
+  background-color: white;
+}
+
+.headerSidepanel H3 {
+  color: red;
+}
+
+
